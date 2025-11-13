@@ -19,13 +19,16 @@ const Extensions = () => {
             <h3 class="extension__name">${extension.name}</h3>
             <p class="extension__description">${extension.description}</p>
             <div>
+              <button class="extension__btn">
+                Remove
+              </button>
               <div class="toggle-container">
                 <div class="toggle"></div>
               </div>
             </div>
           </div>
           </article>
-        `)}
+        `).join('')}
       </section>
     </div>
     
