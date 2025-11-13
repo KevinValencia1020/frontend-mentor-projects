@@ -18,3 +18,33 @@
   --Light-Gradient: linear-gradient(180deg, #EBF2FC 0%, #EEF8F9 100%);
   --Dark-Gradient: linear-gradient(180deg, #040918 0%, #091540 100%);
 }
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  box-shadow: var(--Neutral-300) 2px 2px 6px 1px;
+  padding: 12px 12px;
+  border-radius: 10px;
+}
+
+.header__logo {
+  display: block;
+}
+
+.header__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  padding: 10px 10px;
+  border-radius: 8px;
+}
