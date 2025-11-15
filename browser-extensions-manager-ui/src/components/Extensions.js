@@ -14,19 +14,19 @@ const Extensions = () => {
 
         ${data.map((extension, index) => `
           <article class="extension__card" key=${index}>
-            <img src="${extension.logo}" alt="${extension.name} logo" class="extension__img" />
+          <img src="${extension.logo}" alt="${extension.name} logo" class="extension__img" />
           <div class="extension__info">
-            <h3 class="extension__name">${extension.name}</h3>
-            <p class="extension__description">${extension.description}</p>
-            <div>
-              <button class="extension__btn">
-                Remove
-              </button>
-              <div class="toggle-container">
-                <div class="toggle"></div>
+              <h3 class="extension__name">${extension.name}</h3>
+              <p class="extension__description">${extension.description}</p>
+              <div class="extension__actions">
+                <button class="extension__btn">
+                  Remove
+                </button>
+                <div class="toggle-container">
+                  <div class="toggle"></div>
+                </div>
               </div>
             </div>
-          </div>
           </article>
         `).join('')}
       </section>
