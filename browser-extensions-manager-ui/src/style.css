@@ -101,3 +101,40 @@
   cursor: pointer;
   font-size: 14px;
 }
+
+.extension__actions{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toggle-container{
+  width: 60px;
+  height: 30px;
+  background-color: var(--Neutral-300);
+  transition: background-color 0.3s ease;
+  border-radius: 15px;
+  position: relative;
+  cursor: pointer;
+  outline: 0;
+}
+
+.toggle{
+  width: 26px;
+  height: 26px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: left 0.3s ease, background-color 0.3s ease;
+}
+
+.toggle-container.active{
+  background-color: #adff2f;
+  outline: 0;
+}
+
+.toggle-container.active .toggle{
+  left: 32px;
+}
